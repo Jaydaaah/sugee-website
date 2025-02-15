@@ -36,7 +36,7 @@ export default function RootLayout({
                     <div className="navbar bg-base-100 rounded-badge">
                         <div className="flex-1">
                             <Link className="btn btn-ghost text-xl" href="/">
-                                <SugeeLogo className="w-[120px]"/>
+                                <SugeeLogo className="w-[120px]" />
                             </Link>
                         </div>
                         <div className="flex-none">
@@ -62,6 +62,13 @@ export default function RootLayout({
                     </div>
                 </header>
                 <div>{children}</div>
+
+                {/* Footer */}
+                <footer className="bg-blue-500 py-6">
+                    <div className="container mx-auto text-center text-white">
+                        <p>&copy; 2025 Sugee. All rights reserved.</p>
+                    </div>
+                </footer>
             </body>
         </html>
     );

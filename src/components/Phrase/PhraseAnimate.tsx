@@ -6,7 +6,7 @@ import { PropsWithChildren } from "react";
 export default function PhraseAnimate({
     children,
     className,
-}: PropsWithChildren & { className: string }) {
+}: PropsWithChildren & { className?: string }) {
     return (
         <motion.div
             className={className}

@@ -3,6 +3,7 @@ import Talino from "@/components/Phrase/Talino";
 import Tangkad from "@/components/Phrase/Tangkad";
 import Tibay from "@/components/Phrase/Tibay";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -19,13 +20,17 @@ export default function Home() {
                             strong bones and active minds.
                         </p>
                         <div className="flex justify-center gap-2">
-                            <button className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-md font-medium shadow-md">
-                                Sugee kids
-                            </button>
-                            <div className="divider divider-horizontal h-30"></div>
-                            <button className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-md font-medium shadow-md">
-                                Sugee Teens
-                            </button>
+                            <Link href={"/sugee-kids"}>
+                                <button className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-md font-medium shadow-md">
+                                    Sugee kids
+                                </button>
+                            </Link>
+                            <Link href={"/sugee-teens"}>
+                                <div className="divider divider-horizontal h-30"></div>
+                                <button className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-md font-medium shadow-md">
+                                    Sugee Teens
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
