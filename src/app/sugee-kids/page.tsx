@@ -102,7 +102,7 @@ export default function Kids() {
                         </h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             Discover the perfect blend of nutrients designed
-                            specifically for children's growth and development.
+                            specifically for children&apos;s growth and development.
                         </p>
                     </motion.div>
                     <motion.div

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import Image from "next/image";
 import SugeeLogo from "@/components/SugeeLogo";
 
 const geistSans = Geist({
@@ -29,7 +28,7 @@ export default function RootLayout({
     return (
         <html lang="en" data-theme="bumblebee">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
             >
                 {/* Header */}
                 <header className="max-w-7xl mx-auto">
@@ -42,20 +41,26 @@ export default function RootLayout({
                         <div className="flex-none">
                             <ul className="menu menu-horizontal px-1">
                                 <li>
-                                    <a>Link</a>
+                                    <Link href={"/about"}>Our Company</Link>
                                 </li>
                                 <li>
                                     <details>
-                                        <summary>Parent</summary>
+                                        <summary>Products</summary>
                                         <ul className="bg-base-100 rounded-t-none p-2">
                                             <li>
-                                                <a>Link 1</a>
+                                                <a className="text-nowrap">Sugee Kids</a>
                                             </li>
                                             <li>
-                                                <a>Link 2</a>
+                                                <a className="text-nowrap">Sugee Teens</a>
                                             </li>
                                         </ul>
                                     </details>
+                                </li>
+                                <li>
+                                    <a>Activities</a>
+                                </li>
+                                <li>
+                                    <Link href={"/contact-us"}>Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
